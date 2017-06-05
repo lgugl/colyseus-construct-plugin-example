@@ -1,7 +1,7 @@
 {
   "name": "server-colyseus",
   "version": "1.0.0",
-  "description": "Simple game server with Colyseus framework",
+  "description": "example",
   "main": "index.js",
   "scripts": {
     "start": "cross-env DEBUG=* ./node_modules/.bin/supervisor -i node_modules -- index.js"

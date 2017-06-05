@@ -7,7 +7,7 @@ class GameRoom extends Room {
     super( options )
 
     // Broadcast patched state to all connected clients at 20fps (50ms)
-    this.setPatchRate(50)//why does it not trigger onUpdate event?
+    this.setPatchRate(50)
 
     // Call game simulation at 60fps (16.6ms)
     this.setSimulationInterval( this.tick.bind(this), 1000 / 60 )
@@ -68,7 +68,7 @@ class GameRoom extends Room {
     if (data.x && data.y) {
       player.setPosition(data.x, data.y)
       // resend the state to update on client side
-      
+
     }
 
   }
