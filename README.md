@@ -1,0 +1,1 @@
+colyseus-construct-plugin-example
